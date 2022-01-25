@@ -16,4 +16,4 @@ import { CardComponent } from './card/card.ts';
 
   ]
 })
-export class AppModule { }
+export class ComponentsModule { }
