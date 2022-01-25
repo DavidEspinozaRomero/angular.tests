@@ -12,6 +12,7 @@ import { CardComponent } from './card/card.ts';
     AppRoutingModule
   ],
   exports: [
+    CardComponent,
 
   ]
 })
