@@ -11,6 +11,8 @@ import { BtnSumComponent } from './btn-sum/btn-sum.component';
 import { ListaPersonasComponent } from './lista-personas/lista-personas.component';
 import { CarouselComponent } from './carousel/carousel.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,4 +31,4 @@ import { CarouselComponent } from './carousel/carousel.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { }     

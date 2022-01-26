@@ -1,0 +1,23 @@
+<div>
+  <h1>{{title}} </h1>
+  <form action="">
+    <div>
+      <label for="">First Name</label>
+      <input type="text" [(ngModel)] = "firstName" placeholder="Nombre">
+    </div>
+    <div>
+      <label for="">Last Name</label>
+      <input type="text" [(ngModel)] = "lastName" placeholder="Apellido">
+    </div>
+    <button type="submit" (click)="addPerson()">Agregar</button>
+  </form>
+</div>
+
+<div>
+  <div *ngFor="let person of persons; let i = index">
+    {{i}}
+    {{person.firstName}}
+    {{person.lastName}}
+  </div>
+</div>
+

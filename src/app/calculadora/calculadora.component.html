@@ -1,0 +1,13 @@
+<p>calculadora works!</p>
+<div>
+  <h1>Aplicacion de calculadora</h1>
+  <form action="post">
+    <label for="">Primer numero</label>
+    <input type="number" placeholder="ingrese un numero" [(ngModel)] = "a" name="a" id="">
+    <label for="">Segundo numero</label>
+    <input type="number" placeholder="ingrese un numero" [(ngModel)] = "numberB" name="numberB" id="">
+    <br>
+    <button (click)="sum()" >Sumar</button>
+  </form>
+  <span>Resultado: {{r}}</span>
+</div>

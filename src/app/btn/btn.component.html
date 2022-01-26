@@ -1,0 +1,19 @@
+<div>
+  <h1>Listado de personas</h1>
+<button (click)="addPerson()">AddPerson</button>
+<p *ngIf="show; else elseblock">{{message}}</p>
+  <ng-template #elseblock>
+    <p>{{message}}</p>
+  </ng-template>
+
+  <label for="">Titulo Persona</label> <br>
+  <input type="text" (input)="changeTitle($event)">
+  {{title}}
+
+  <label for="">Titulo Persona</label> <br>
+  <input type="text" [(ngModel)]='title'>
+  <br>
+  {{title}}
+
+</div>
+
