@@ -5,7 +5,7 @@ import { CardComponent } from './card/card.ts';
 
 @NgModule({
   declarations: [
-    CardComponent
+    CardComponent,
   ],
   imports: [
     BrowserModule,
