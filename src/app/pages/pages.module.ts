@@ -4,6 +4,7 @@ import { ProductsComponent } from './products/products.component';
 import { MainComponent } from './main/main.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 
@@ -12,7 +13,8 @@ import { BlogComponent } from './blog/blog.component';
     ProductsComponent,
     MainComponent,
     ContactComponent,
-    BlogComponent
+    BlogComponent,
+    GalleryComponent
   ],
   imports: [
     CommonModule
