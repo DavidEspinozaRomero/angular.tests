@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+
+import { ComponentsModule } from '../componentes/components.module';
 import { ProductsComponent } from './products/products.component';
 import { MainComponent } from './main/main.component';
 import { ContactComponent } from './contact/contact.component';
@@ -17,7 +20,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     GalleryComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ComponentsModule,
   ]
 })
 export class PagesModule { }
