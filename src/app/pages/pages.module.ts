@@ -19,6 +19,13 @@ import { GalleryComponent } from './gallery/gallery.component';
     BlogComponent,
     GalleryComponent
   ],
+  exports:[
+    ProductsComponent,
+    MainComponent,
+    ContactComponent,
+    BlogComponent,
+    GalleryComponent
+  ],
   imports: [
     CommonModule,
     ComponentsModule,
