@@ -8,6 +8,7 @@ import { MainComponent } from './main/main.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { PrimengModule } from '../primeng/primeng.module';
 
 
 
@@ -29,6 +30,7 @@ import { GalleryComponent } from './gallery/gallery.component';
   imports: [
     CommonModule,
     ComponentsModule,
+    PrimengModule,
   ]
 })
 export class PagesModule { }
