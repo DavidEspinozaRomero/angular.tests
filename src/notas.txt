@@ -1,0 +1,7 @@
+paginas [
+    intro, productos (categorias), contacto, nosotros, blog,
+]
+
+ng g c pages/about-us
+ng g c modals/product
+ng g c buy
