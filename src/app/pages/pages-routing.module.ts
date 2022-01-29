@@ -10,8 +10,7 @@ const routes: Routes = [
 	{ path: 'productos', component: ProductsComponent },
 	{ path: 'contacto', component: ContactComponent },
 	// { path: 'nosotros', component: ProductsComponent },
-	{ path: '**', redirecto: '' },
-	
+	{ path: '**', redirectTo: '' },
 ];
 
 @NgModule({
