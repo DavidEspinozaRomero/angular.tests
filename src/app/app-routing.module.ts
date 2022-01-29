@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 // import { AuthGuard } from './core/guards/auth.guard';
 
 const routes: Routes = [
-  { path: '', component: AppComponent, loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) },
-];
+    { path: '', component: AppComponent, loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) },
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
