@@ -1,5 +1,6 @@
 paginas [
     intro, productos (categorias), contacto, nosotros, blog,
+    bordados a mano, maquina, punto de cruz
 ]
 
 ng g c pages/about-us

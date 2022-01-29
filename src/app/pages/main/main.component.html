@@ -1,26 +1,15 @@
 <section class="">
-    <!-- <img src="" class="img-fluid img-bg" alt=""> -->
-    <h1>Lila's Bordados</h1>
+	<!-- <img src="" class="img-fluid img-bg" alt=""> -->
+	<h1>Lila's Bordados</h1>
 </section>
 
 <p>Todos nuestros productos son únicos, hechos a mano, a tu medida.
 </p>
 
 <section class="">
-    <div class="row">
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img src='src/assets/rose.jpg' class="card-img-top" alt="img test">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <app-card></app-card>
-        </div>
-        <div class="col"></div>
-    </div>
+	<div class="row justify-items-center align-items-center">
+		<div class="col-3" *ngFor="let item of list">
+			<app-card [src]="item.url" [alt]='item.alt' [title]='item.title' [description]='item.description' ></app-card>
+		</div>
+	</div>
 </section>
