@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { PrimengModule } from '../primeng/primeng.module';
+import { PagesRoutingModule } from './pages-routing.module';
 
 
 
@@ -21,14 +22,11 @@ import { PrimengModule } from '../primeng/primeng.module';
     GalleryComponent
   ],
   exports:[
-    ProductsComponent,
-    MainComponent,
-    ContactComponent,
-    BlogComponent,
-    GalleryComponent
+
   ],
   imports: [
     CommonModule,
+    PagesRoutingModule,
     ComponentsModule,
     PrimengModule,
   ]

@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 
 const routes: Routes = [
   { path: '', component: AppComponent, loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) },
-//   { path: 'account', loadChildren: () => import('./account/account.module').then(m => m.AccountModule) },
 ];
 
 @NgModule({
