@@ -3,8 +3,8 @@
 <div class="row">
 	<div class="col-2">
 		<h2> Productos </h2>
-		<ul>
-			<li>
+		<ul class="list-group">
+			<li class="list-item">
 				<a class="text-decoration-none" [routerLink]="[ '/bordadoamano' ]"> Bordados a mano </a>
 			</li>
 			<li>
@@ -51,8 +51,21 @@
 			<label for="floatingInput">Email address</label>
 			<button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
 		</div>
+
 		<div class="input-group mb-3">
-			<input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+			<input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+			<button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+		</div>
+
+	</div>
+	<div class="row ">
+		<div class="col">
+			© 2021 Company, Inc. All rights reserved.
+		</div>
+		<div class="col float-end">
+			<i class="me-3 fa fa-whatsapp" aria-hidden="true"> whatsapp </i>
+			<i class="me-3 fa fa-facebook-official" aria-hidden="true"> facebook </i>
+			<i class="me-3 fa fa-instagram" aria-hidden="true"> instagram </i>
 		</div>
 	</div>
 </div>
