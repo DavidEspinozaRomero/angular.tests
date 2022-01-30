@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-img-lr',
@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-img-lr.component.scss']
 })
 export class CardImgLrComponent implements OnInit {
+  
+  @Input() src?:string
+  @Input() alt?:string
+  @Input() title?:string
+  @Input() description?:string
+  @Input() imgPosition?:string
 
   constructor() { }
 
