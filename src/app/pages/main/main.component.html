@@ -16,7 +16,8 @@
 
 
 <section>
-	<app-card-img-lr *ngFor="let item of cardlrlist"></app-card-img-lr>
+	<app-card-img-lr *ngFor="let item of cardlrlist"
+	[src]="item.url" [alt]='item.alt' [title]='item.title' [description]='item.description' [imgPosition]='item.imgPosition'></app-card-img-lr>
 	
 
 </section>
