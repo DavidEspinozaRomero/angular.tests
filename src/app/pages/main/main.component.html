@@ -1,12 +1,12 @@
 <section class="mb-4">
-	<img src="../../../assets/rose.jpg" class="img-fluid img-bg" alt="">
+	<img src="https://unsplash.com/photos/5hvn-2WW6rY/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQzNTA5ODkz&force=true&w=640" class="img-fluid img-bg" alt="">
 	<h1>Lila's Bordados</h1>
 </section>
 
 <p >Todos nuestros productos son únicos, hechos a mano, a tu medida.
 </p>
 
-<section class="mb-4">
+<section class="mb-4 px-5">
 	<div class="row justify-content-evenly align-items-center">
 		<div class="col-3" *ngFor="let item of list">
 			<app-card [src]="item.src" [alt]='item.alt' [title]='item.title' [description]='item.description' ></app-card>
@@ -15,9 +15,7 @@
 </section>
 
 
-<section class="mb-4">
+<section class="mb-4 px-4">
 	<app-card-img-lr *ngFor="let item of cardlrlist"
 	[src]="item.src" [alt]='item.alt' [title]='item.title' [description]='item.description' [imgPosition]='item.imgPosition'></app-card-img-lr>
-	
-
 </section>
