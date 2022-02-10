@@ -1,3 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
 
+.aspect-ratio-16{
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.aspect-ratio-4{
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}

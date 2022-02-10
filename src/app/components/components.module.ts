@@ -14,6 +14,11 @@ import { CardComponent } from './card/card.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    CardImgLrComponent,
+    CarouselComponent,
+    CardComponent
   ]
 })
 export class ComponentsModule { }

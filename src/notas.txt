@@ -1,0 +1,11 @@
+paginas [
+    intro, productos (categorias), contacto, nosotros, blog,
+    bordados a mano, maquina, punto de cruz
+]
+
+arreglar las rutas
+crear las paginas mencionadas
+
+ng g c pages/about-us
+ng g c modals/product
+ng g c buy

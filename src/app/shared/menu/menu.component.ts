@@ -11,28 +11,38 @@ export class MenuComponent implements OnInit {
 
   items: MenuItem[] = [
     {
-      label: 'File',
-      items: [{
-        label: 'New', 
-        icon: 'pi pi-fw pi-plus',
-      items: [
-        {label: 'Project'},
-        {label: 'Other'},
-      ]
-      },
-      {label: 'Open'},
-      {label: 'Quit'}
-      ]
-      },
-      {
-      label: 'Edit',
+      label: 'Products',
+      routerLink: 'productos',
+      items: 
+        [
+          {
+            label: 'Bordado a mano', 
+            icon: 'pi pi-fw pi-plus',
+            routerLink: 'bordadoamano',
+          },
+          {
+            label: 'Bordado a maquina', 
+            icon: 'pi pi-fw pi-dollar',
+            routerLink: 'bordadoamaquina',
+          },
+          {
+            label: 'Punto de cruz', 
+            icon: 'pi pi-fw pi-dollar',
+            routerLink: 'puntodecruz',
+          },
+        ]
+    },
+    {
+      label: 'Contacto',
       icon: 'pi pi-fw pi-pencil',
-      items: [
-        {label: 'Delete', icon: 'pi pi-fw pi-trash'},
-        {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
-      ]
-      }
-    ];
+      routerLink: 'contacto',
+    },
+    {
+      label: 'Nosotros',
+      icon: 'pi pi-fw pi-gear',
+      routerLink: 'nosotros',
+    }
+  ];
 
   constructor() { }
 
