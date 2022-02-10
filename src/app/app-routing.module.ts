@@ -1,12 +1,21 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AppComponent } from './app.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
+import { MainComponent } from './pages/main/main.component';
+import { ProductsComponent } from './pages/products/products.component';
 // import { LayoutsComponent } from './layouts/layouts.component';
 // import { AuthGuard } from './core/guards/auth.guard';
 
 const routes: Routes = [
-    { path: '', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) },
+    // { path: '', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) },
+  { path: '', component: MainComponent },
+	{ path: 'productos', component: ProductsComponent },
+	{ path: 'contacto', component: ContactComponent },
+	{ path: 'nosotros', component: GalleryComponent },
+	{ path: '**', redirectTo: '' },
+
   ];
 
 @NgModule({

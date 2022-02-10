@@ -10,6 +10,10 @@ import { BlogComponent } from './blog/blog.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { PagesRoutingModule } from './pages-routing.module';
 import { ComponentsModule } from '../components/components.module';
+import { BordadosamanoComponent } from './products/bordadosamano/bordadosamano.component';
+import { BordadosamaquinaComponent } from './products/bordadosamaquina/bordadosamaquina.component';
+import { BordadospuntodecruzComponent } from './products/bordadospuntodecruz/bordadospuntodecruz.component';
+import { NosotrosComponent } from './nosotros/nosotros.component';
 
 
 
@@ -19,7 +23,11 @@ import { ComponentsModule } from '../components/components.module';
     MainComponent,
     ContactComponent,
     BlogComponent,
-    GalleryComponent
+    GalleryComponent,
+    BordadosamanoComponent,
+    BordadosamaquinaComponent,
+    BordadospuntodecruzComponent,
+    NosotrosComponent
   ],
   exports:[
 
