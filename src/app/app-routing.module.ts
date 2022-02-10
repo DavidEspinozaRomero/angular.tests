@@ -1,3 +1,4 @@
+import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -9,13 +10,14 @@ import { ProductsComponent } from './pages/products/products.component';
 // import { AuthGuard } from './core/guards/auth.guard';
 
 const routes: Routes = [
-    // { path: '', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) },
+    
   { path: '', component: MainComponent },
 	{ path: 'productos', component: ProductsComponent },
+  { path: 'productos', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) },
 	{ path: 'contacto', component: ContactComponent },
-	{ path: 'nosotros', component: GalleryComponent },
+	{ path: 'nosotros', component: NosotrosComponent },
+	{ path: 'galleria', component: GalleryComponent },
 	{ path: '**', redirectTo: '' },
-
   ];
 
 @NgModule({

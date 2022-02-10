@@ -1,21 +1,19 @@
+import { BordadospuntodecruzComponent } from './products/bordadospuntodecruz/bordadospuntodecruz.component';
+import { BordadosamaquinaComponent } from './products/bordadosamaquina/bordadosamaquina.component';
+import { BordadosamanoComponent } from './products/bordadosamano/bordadosamano.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ContactComponent } from './contact/contact.component';
-import { ProductsComponent } from './products/products.component';
-import { MainComponent } from './main/main.component';
-import { GalleryComponent } from './gallery/gallery.component';
 
 const routes: Routes = [
-	{ path: '', component: MainComponent },
-	{ path: 'productos', component: ProductsComponent },
-	{ path: 'contacto', component: ContactComponent },
-	{ path: 'nosotros', component: GalleryComponent },
+	{ path: 'bordadoamano', component: BordadosamanoComponent },
+	{ path: 'bordadoamaquina', component: BordadosamaquinaComponent },
+	{ path: 'bordadopuntodecruz', component: BordadospuntodecruzComponent },
 	{ path: '**', redirectTo: '' },
 ];
 
 @NgModule({
-	imports: [RouterModule.forRoot(routes)],
+	imports: [RouterModule.forChild(routes)],
 	exports: [RouterModule]
 })
 
