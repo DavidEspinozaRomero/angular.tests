@@ -1,4 +1,4 @@
-<section class="mb-4">
+<section class="mb-5">
 	<div class="card bg-dark text-white">
 		<img src="https://unsplash.com/photos/Rdb--yAPMyI/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MjR8fGVtYnJvaWRlcnl8ZW58MHx8fHwxNjQzNDY3NTQ2&force=true&w=640"
 		class="card-img aspect-ratio-16" alt="todo" >
@@ -9,10 +9,10 @@
 	</div>
 </section>
 
-<p >Todos nuestros productos son únicos, hechos a mano, a tu medida.
-</p>
+<h2 class="text-align-center mb-5">Todos nuestros productos son únicos, hechos a mano, a tu medida.
+</h2>
 
-<section class="mb-4 px-5">
+<section class="mb-5 px-5">
 	<div class="row justify-content-evenly align-items-center">
 		<div class="col-3" *ngFor="let item of list">
 			<app-card [src]="item.src" [alt]='item.alt' [title]='item.title' [description]='item.description' ></app-card>
