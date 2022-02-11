@@ -5,7 +5,7 @@ $font-titles: 'Roboto Slab', serif;
 
 
 body {
-    background-color: rgba($color-primary, .3);
+    background-color: rgba($color-primary, .1);
     font-family: $font-primary;
 }
 
@@ -21,4 +21,5 @@ body {
 
 .ff-t {
     font-family: $font-titles;
+    color: $font-primary;
 }
