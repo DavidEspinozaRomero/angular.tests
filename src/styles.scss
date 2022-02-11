@@ -1,5 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+$color-primary: #b9157e;
+$font-primary: 'Poppins', sans-serif;
+$font-titles: 'Roboto Slab', serif;
 
+
+body {
+    background-color: rgba($color-primary, .3);
+    font-family: $font-primary;
+}
 
 .aspect-ratio-16{
     aspect-ratio: 16/9;
@@ -9,4 +17,8 @@
 .aspect-ratio-4{
     aspect-ratio: 4/3;
     object-fit: cover;
+}
+
+.ff-t {
+    font-family: $font-titles;
 }
