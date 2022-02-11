@@ -1,6 +1,7 @@
 paginas [
     intro, productos (categorias), contacto, nosotros, blog,
     bordados a mano, maquina, punto de cruz
+    bordados a tu medida
 ]
 
 arreglar las rutas

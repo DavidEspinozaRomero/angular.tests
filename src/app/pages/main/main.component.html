@@ -17,7 +17,7 @@
 <section class="mb-5 px-5">
 	<div class="row justify-content-evenly align-items-center">
 		<div class="col-3" *ngFor="let item of list">
-			<app-card [src]="item.src" [alt]='item.alt' [title]='item.title' [description]='item.description' [routerLink]="item.routerLink" ></app-card>
+			<app-card [src]="item.src" [alt]='item.alt' [title]='item.title' [description]='item.description'  ></app-card>
 		</div>
 	</div>
 </section>
@@ -25,5 +25,5 @@
 
 <section class="mb-4 px-4">
 	<app-card-img-lr *ngFor="let item of cardlrlist"
-	[src]="item.src" [alt]='item.alt' [title]='item.title' [description]='item.description' [imgPosition]='item.imgPosition' [routerLink]="item.routerLink"></app-card-img-lr>
+	[src]="item.src" [alt]='item.alt' [title]='item.title' [description]='item.description' [imgPosition]='item.imgPosition' ></app-card-img-lr>
 </section>
