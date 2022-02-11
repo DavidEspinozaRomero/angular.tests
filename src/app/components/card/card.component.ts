@@ -11,6 +11,7 @@ export class CardComponent implements OnInit {
   @Input() alt?:string
   @Input() title?:string
   @Input() description?:string
+  @Input() routerLink?:string
 
   constructor() { }
 
