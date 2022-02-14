@@ -8,7 +8,7 @@ import { ComponentsModule } from './components/components.module';
 import { PagesRoutingModule } from './pages/pages-routing.module';
 import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
-import {APP_BASE_HREF, Location, LocationStrategy, PathLocationStrategy} from '@angular/common';
+import {HashLocationStrategy, Location, LocationStrategy} from '@angular/common';
 
 
 @NgModule({
@@ -24,7 +24,7 @@ import {APP_BASE_HREF, Location, LocationStrategy, PathLocationStrategy} from '@
     PagesModule,
     ComponentsModule,
   ],
-  providers: [Location, {provide: LocationStrategy, useClass: PathLocationStrategy}, {provide: APP_BASE_HREF, useValue: '/my/app'}],
+  providers: [Location, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }     
