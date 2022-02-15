@@ -16,7 +16,7 @@ export class MenuComponent implements OnInit {
       routerLink: '**',
     },
     {
-      label: 'Products',
+      label: 'Productos',
       icon: 'bi bi-bag-heart',
       // routerLink: 'productos',
       items: 
