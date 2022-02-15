@@ -12,11 +12,12 @@ export class MenuComponent implements OnInit {
   items: MenuItem[] = [
     {
       label: 'inicio',
-      icon: 'pi pi-fw pi-pencil',
+      icon: 'bi bi-house-heart',
       routerLink: '**',
     },
     {
       label: 'Products',
+      icon: 'bi bi-bag-heart',
       // routerLink: 'productos',
       items: 
         [
