@@ -11,7 +11,7 @@ export class MenuComponent implements OnInit {
 
   items: MenuItem[] = [
     {
-      label: 'inicio',
+      label: 'Inicio',
       icon: 'bi bi-house-heart',
       routerLink: '**',
     },
@@ -47,6 +47,10 @@ export class MenuComponent implements OnInit {
       label: 'Nosotros',
       icon: 'bi bi-people-fill',
       routerLink: 'nosotros',
+    },
+    {
+      label: 'test',
+      icon: 'bi bi-house-heart',
     }
   ];
 
