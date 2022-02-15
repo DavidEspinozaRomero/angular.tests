@@ -23,29 +23,29 @@ export class MenuComponent implements OnInit {
         [
           {
             label: 'Bordado a mano', 
-            icon: 'pi pi-fw pi-plus',
+            // icon: 'pi pi-fw pi-plus',
             routerLink: 'productos/bordadoamano',
           },
           {
             label: 'Bordado a maquina', 
-            icon: 'pi pi-fw pi-dollar',
+            // icon: 'pi pi-fw pi-dollar',
             routerLink: 'productos/bordadoamaquina',
           },
           {
             label: 'Punto de cruz', 
-            icon: 'pi pi-fw pi-dollar',
+            // icon: 'pi pi-fw pi-dollar',
             routerLink: 'productos/bordadopuntodecruz',
           },
         ]
     },
     {
       label: 'Contacto',
-      icon: 'pi pi-fw pi-pencil',
+      icon: 'bi bi-envelope',
       routerLink: 'contacto',
     },
     {
       label: 'Nosotros',
-      icon: 'pi pi-fw pi-gear',
+      icon: 'bi bi-people-fill',
       routerLink: 'nosotros',
     }
   ];
