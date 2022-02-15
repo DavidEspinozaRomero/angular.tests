@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CardImgLrComponent } from './card-img-lr/card-img-lr.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CardComponent } from './card/card.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -13,7 +14,8 @@ import { CardComponent } from './card/card.component';
     CardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
   ],
   exports:[
     CardImgLrComponent,
