@@ -19,6 +19,16 @@ body {
     object-fit: cover;
 }
 
+.aspect-ratio-9{
+    aspect-ratio: 9/16;
+    object-fit: cover;
+}
+
+.aspect-ratio-3{
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+
 .ff-t {
     font-family: $font-titles;
     color: $color-primary;
