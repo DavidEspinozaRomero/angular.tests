@@ -1,7 +1,7 @@
 <div class="card border rounded shadow-sm" style="width: 18rem;">
     <img [src]="src" class="card-img-top aspect-ratio-4" [alt]="alt">
     <div class="card-body">
-        <h2 class="card-title h4 fw-bold ff-t" role="button" [routerLink]="[ '/productos/bordadoamano' ]"  > {{title}} </h2>
+        <h2 class="card-title h4 fw-bold ff-t" role="button" [routerLink]="[ {{routerLink}} ]"  > {{title}} </h2>
         <p class="card-text fs-5"> {{description}} </p>
     </div>
 </div>
