@@ -13,7 +13,7 @@ const routes: Routes = [
     
   { path: '', component: MainComponent },
   { path: 'productos', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) },
-	{ path: 'productos', component: ProductsComponent },
+	{ path: 'productos', component: ProductsComponent, match:'full' },
 	{ path: 'contacto', component: ContactComponent },
 	{ path: 'nosotros', component: NosotrosComponent },
 	{ path: 'galleria', component: GalleryComponent },
