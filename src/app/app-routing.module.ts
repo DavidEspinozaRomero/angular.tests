@@ -12,8 +12,8 @@ import { ProductsComponent } from './pages/products/products.component';
 const routes: Routes = [
     
   { path: '', component: MainComponent },
-	{ path: 'productos', component: ProductsComponent },
   { path: 'productos', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) },
+	{ path: 'productos', component: ProductsComponent },
 	{ path: 'contacto', component: ContactComponent },
 	{ path: 'nosotros', component: NosotrosComponent },
 	{ path: 'galleria', component: GalleryComponent },
