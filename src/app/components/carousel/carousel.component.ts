@@ -32,7 +32,7 @@ export class CarouselComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getImg(item:string[]) {
+  getImg(item: any) {
     this.image = item.url
   }
 }
