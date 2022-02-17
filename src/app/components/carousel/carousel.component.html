@@ -1,6 +1,10 @@
 
-<p-galleria [value]="images">
-    <ng-template pTemplate="item" let-item>
-        <img [src]="item.previewImageSrc" [alt]="item.alt" />
-    </ng-template>
-</p-galleria>
+<div>
+	<img class="card-img aspec-ratio-4" src="" alt="">
+	<div class="row">
+		<div *ngFor="let item of images" 
+		class="col-1">
+	<img class="card-img aspec-ratio-4" [src]="item.url" alt="item.alt"
+	(click)="getImg(item)"></div>
+	</div>
+</div>
