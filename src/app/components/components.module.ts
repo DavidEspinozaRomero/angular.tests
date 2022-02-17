@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { CardImgLrComponent } from './card-img-lr/card-img-lr.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CardComponent } from './card/card.component';
-import { PrimengModule } from '../primeng/primeng.module';
+// import { PrimengModule } from '../primeng/primeng.module';
 
 
 
@@ -18,7 +18,7 @@ import { PrimengModule } from '../primeng/primeng.module';
   imports: [
     CommonModule,
     RouterModule,
-    PrimengModule,
+    // PrimengModule,
   ],
   exports:[
     CardImgLrComponent,
