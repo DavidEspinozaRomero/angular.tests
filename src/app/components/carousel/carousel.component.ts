@@ -39,6 +39,8 @@ export class CarouselComponent implements OnInit {
       title:'test'
     },
   ]
+
+  
   constructor() { }
 
   ngOnInit(): void {
