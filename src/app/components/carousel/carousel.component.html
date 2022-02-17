@@ -3,7 +3,7 @@
 	<img class="card-img aspec-ratio-4" [src]="image" alt="">
 	<div class="row">
 		<div *ngFor="let item of images" 
-		class="col-1">
+		class="col-2">
 			<img class="card-img aspec-ratio-4" [src]="item?.url" alt="item?.alt"
 			(click)="getImg(item)">
 		</div>
