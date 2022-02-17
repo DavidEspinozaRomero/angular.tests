@@ -1,1 +1,8 @@
 <p>carousel works!</p>
+
+
+<p-galleria [value]="images">
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item.previewImageSrc" [alt]="item.alt" />
+    </ng-template>
+</p-galleria>
