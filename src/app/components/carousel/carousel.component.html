@@ -4,7 +4,8 @@
 	<div class="row">
 		<div *ngFor="let item of images" 
 		class="col-1">
-	<img class="card-img aspec-ratio-4" [src]="item.url" alt="item.alt"
-	(click)="getImg(item)"></div>
+			<img class="card-img aspec-ratio-4" [src]="item?.url" alt="item?.alt"
+			(click)="getImg(item)">
+		</div>
 	</div>
 </div>
