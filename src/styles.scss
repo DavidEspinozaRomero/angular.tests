@@ -14,6 +14,12 @@ body {
 }
 
 // #region scrollbar 
+// mozilla
+* {
+    scrollbar-width: .5rem;
+    scrollbar-color: rgba($color-primary, .5) rgba($color-primary, .1);
+}
+//   crome, edge, etc
 *::-webkit-scrollbar {
     width: .5em;
 }
