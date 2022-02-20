@@ -1,14 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+// #region variables
+
 $color-primary: #b9157e;
 $font-primary: 'Poppins', sans-serif;
 $font-titles: 'Roboto Slab', serif;
 
+// #endregion variables
+
+// #region standar 
 
 body {
     background-color: rgba($color-primary, .1);
     font-family: $font-primary;
 }
+body::-webkit-scrollbar {
+    width: 1em;
+}
 
+body::-webkit-scrollbar-track {
+box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: darkgrey;
+outline: 1px solid slategrey;
+}
+// #endregion standar 
+
+// #region clases
 .aspect-ratio-16{
     aspect-ratio: 16/9;
     object-fit: cover;
@@ -38,3 +57,4 @@ body {
     font-family: $font-titles;
     color: $color-primary;
 }
+// #endregion clases
