@@ -1,6 +1,6 @@
 
 <div>
-	<img class="card-img aspect-ratio-16" [src]="image" alt="imagen pricipal">
+	<img class="card-img aspect-ratio-16" [src]="image || '' " alt="imagen pricipal">
 	<div class="row flex-nowrap mt-3 overflow-auto pb-3">
 		<div *ngFor="let item of images" 
 		class="col-2">

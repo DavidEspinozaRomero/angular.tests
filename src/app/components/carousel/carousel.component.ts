@@ -8,8 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CarouselComponent implements OnInit {
 
   @Input() images: any = []
-
-  image:string = this.images[0].url || ''
+  // @Output() OnImage: EventEmitter<any> = new EventEmitter();
+  image:string = this.images[0]?.url || ''
   
   constructor() { }
 
@@ -18,5 +18,6 @@ export class CarouselComponent implements OnInit {
 
   getImg(item: any) {
     this.image = item.url
+    // this.OnImage.emit(this.image)
   }
 }
