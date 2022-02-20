@@ -9,7 +9,7 @@ export class CarouselComponent implements OnInit {
 
   @Input() images: any = []
 
-  image:string = this.images[0].url
+  image:string = this.images[0].url || ''
   
   constructor() { }
 
