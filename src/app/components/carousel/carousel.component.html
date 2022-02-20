@@ -1,7 +1,7 @@
 
 <div>
 	<img class="card-img aspect-ratio-16" [src]="image" alt="imagen pricipal">
-	<div class="row flex-nowrap my-3 overflow-auto ">
+	<div class="row flex-nowrap my-3 overflow-auto pb-3">
 		<div *ngFor="let item of images" 
 		class="col-2">
 			<img class="card-img aspect-ratio-4" [src]="item?.url" alt="item?.alt"
