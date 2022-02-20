@@ -68,10 +68,16 @@
       <div class="col-lg-7">
   
         <!--Google map-->
-        <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
+        <!-- <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
           <iframe src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed"
             frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
+        </div> -->
+        
+        <!-- this creates a google map on the page with the given lat/lng from -->
+        <!-- the component as the initial center of the map: -->
+        <agm-map [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
   
         <br>
         <!--Buttons-->
