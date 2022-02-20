@@ -1,11 +1,11 @@
 
 <div>
-	<img class="card-img aspect-ratio-4" [src]="image" alt="">
+	<img class="card-img aspect-ratio-4" [src]="image" alt="imagen pricipal">
 	<div class="row">
 		<div *ngFor="let item of images" 
 		class="col-2">
-			<img class="card-img aspect-ratio-4" [src]="item?.url" alt="item?.alt"
-			(click)="getImg(item)">
+			<img class="card-img aspect-ratio-16" [src]="item?.url" alt="item?.alt"
+			(mouseover)="getImg(item)">
 		</div>
 	</div>
 </div>
