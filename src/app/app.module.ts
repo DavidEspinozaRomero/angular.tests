@@ -12,7 +12,7 @@ import { PagesRoutingModule } from './pages/pages-routing.module';
 import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
 
-import env from '../environments/environment.prod';
+// import env from '../environments/environment.prod';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import env from '../environments/environment.prod';
     PagesModule,
     ComponentsModule,
     AgmCoreModule.forRoot({
-      apiKey: ''
+      apiKey: 'AIzaSyCSM3liB-78BXMGJB9mTSYRWg6uCVU1Ls4'
     })
   ],
   providers: [Location, {provide: LocationStrategy, useClass: HashLocationStrategy}],
