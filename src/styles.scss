@@ -7,25 +7,26 @@ $font-titles: 'Roboto Slab', serif;
 
 // #endregion variables
 
-// #region standar 
 
 body {
     background-color: rgba($color-primary, .1);
     font-family: $font-primary;
 }
-body::-webkit-scrollbar {
-    width: 1em;
+
+// #region scrollbar 
+*::-webkit-scrollbar {
+    width: .5rem;
 }
 
-body::-webkit-scrollbar-track {
-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+*::-webkit-scrollbar-track {
+box-shadow: inset 0 0 6px rgba($color-primary, .1);
 }
 
-body::-webkit-scrollbar-thumb {
-background-color: darkgrey;
-outline: 1px solid slategrey;
+*::-webkit-scrollbar-thumb {
+background-color: rgba($color-primary, .5);
+outline: 1px solid rgba($color-primary, .2);
 }
-// #endregion standar 
+// #endregion scrollbar 
 
 // #region clases
 .aspect-ratio-16{
