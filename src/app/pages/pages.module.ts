@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AgmCoreModule } from '@agm/core';
+// import { AgmCoreModule } from '@agm/core';
 
 import { PrimengModule } from '../primeng/primeng.module';
 import { ProductsComponent } from './products/products.component';
@@ -30,9 +30,9 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
     BordadospuntodecruzComponent,
     NosotrosComponent,
     ComponentsModule,
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCSM3liB-78BXMGJB9mTSYRWg6uCVU1Ls4'
-    })
+    // AgmCoreModule.forRoot({
+    //   apiKey: 'AIzaSyCSM3liB-78BXMGJB9mTSYRWg6uCVU1Ls4'
+    // })
   ],
   exports:[
 
