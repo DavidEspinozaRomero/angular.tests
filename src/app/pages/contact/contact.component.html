@@ -25,7 +25,7 @@
   
             <p>We'll write rarely, but with only the best content.</p>
             <br>
-            <form  [formGroup]="contactForm" ngSubmit="onSubmit($event)">
+            <form  [formGroup]="contactForm" (ngSubmit)="onSubmit($event)">
               <!--#region Body-->
               <div class="md-form mb-3">
                 <i class="fas fa-user prefix grey-text"></i>
@@ -77,7 +77,7 @@
   
       <!--Grid column-->
       <div class="col-lg-7">
-        <pre>{{contactForm.value | json}}</pre>
+        <!-- <pre>{{contactForm.value | json}}</pre> -->
         <!--Google map-->
         <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
           <iframe src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed"
