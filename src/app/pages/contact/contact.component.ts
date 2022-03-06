@@ -11,12 +11,14 @@ export class ContactComponent implements OnInit {
   // title = 'My first AGM project';
   // lat = 51.678418;
   // lng = 7.809007;
-  
+  regExp: RegExp
+
   contactForm:FormGroup = this.fb.group({
-    name: ['test', [Validators.required] ],
-    email: ['test', [Validators.required] ],
-    subject: ['test', [Validators.required] ],
-    description: ['test', [Validators.required] ],
+    name: ['', [Validators.required] ],
+    phone: ['', [Validators.required, Validators.maxLength(10)] ],
+    email: ['', [Validators.required] ],
+    subject: ['', [Validators.required] ],
+    description: ['', [Validators.required] ],
   })
 
   constructor(private fb:FormBuilder) { }
@@ -32,6 +34,7 @@ export class ContactComponent implements OnInit {
   submit(event:any)
   {
     console.log(event)
+    console.log(this.contactForm.value)
   }
   //#endregion funtions
 }
