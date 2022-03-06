@@ -30,42 +30,41 @@
               <!--#region Body-->
               <div class="md-form">
                 <i class="fas fa-user prefix grey-text"></i>
-                <label for="form-name">Nombre:</label>
+                <label for="form-name" class="fw-bold">Nombre:</label>
                 <input type="text"
                 name="name"
-                controlName="name"
+                formControlName="name"
                 id="form-name" class="form-control">
               </div>
     
               <div class="md-form">
                 <i class="fas fa-envelope prefix grey-text"></i>
-                <label for="form-email">Correo</label>
+                <label for="form-email " class="fw-bold">Correo:</label>
                 <input type="email"
                 name="email"
-                controlName="email"
+                formControlName="email"
                 id="form-email" class="form-control">
               </div>
     
               <div class="md-form">
                 <i class="fas fa-tag prefix grey-text"></i>
-                <label for="form-Subject">Asunto</label>
+                <label for="form-Subject " class="fw-bold">Asunto:</label>
                 <input type="text"
                 name="subject"
-                controlName="subject"
+                formControlName="subject"
                 id="form-Subject" class="form-control">
               </div>
     
               <div class="md-form">
                 <i class="fas fa-pencil-alt prefix grey-text"></i>
-                <label for="form-text">Descripcion</label>
+                <label for="form-text " class="fw-bold">Descripcion:</label>
                 <textarea id="form-text" class="form-control md-textarea" rows="3"
                 name="description"
-                controlName="description"></textarea>
+                formControlName="description"></textarea>
               </div>
     
               <div class="text-center mt-4">
-                <button type="submit" class="btn btn-primary">Submit</button>
-                <button class="btn btn-light-blue">Submit</button>
+                <button type="submit" class="btn btn-primary fw-bold">Submit</button>
               </div>
             <!--#endregion Body-->
             </form>
@@ -79,7 +78,7 @@
   
       <!--Grid column-->
       <div class="col-lg-7">
-  
+        <pre>{{contactForm.value | json}}</pre>
         <!--Google map-->
         <!-- <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
           <iframe src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed"
