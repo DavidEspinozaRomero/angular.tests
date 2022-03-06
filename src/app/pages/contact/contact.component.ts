@@ -12,7 +12,7 @@ export class ContactComponent implements OnInit {
   // lat = 51.678418;
   // lng = 7.809007;
   
-  contactForm:FormGroup = this.fb.FormGroup({
+  contactForm:FormGroup = this.fb.group({
     name: ['test', [Validators.required] ],
     email: ['test', [Validators.required] ],
     subject: ['test', [Validators.required] ],

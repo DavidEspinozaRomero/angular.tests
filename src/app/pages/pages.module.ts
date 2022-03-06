@@ -35,8 +35,8 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
   ],
   imports: [
     CommonModule,
-    ReactiveFormsModule,
     PagesRoutingModule,
+    ReactiveFormsModule,
     PrimengModule,
     ComponentsModule,
   ]
