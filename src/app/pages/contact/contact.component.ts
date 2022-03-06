@@ -14,6 +14,9 @@ export class ContactComponent implements OnInit {
   
   contactForm:FormGroup = this.fb.FormGroup({
     name: ['test', [Validators.required] ],
+    email: ['test', [Validators.required] ],
+    subject: ['test', [Validators.required] ],
+    description: ['test', [Validators.required] ],
   })
 
   constructor(private fb:FormBuilder) { }
@@ -21,5 +24,14 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
+  //#region functions
+  
+  // Trae la informacion del formulario
+  // 06/03/2022
+  // David E.
+  submit(event:any)
+  {
+    console.log(event)
+  }
+  //#endregion funtions
 }
