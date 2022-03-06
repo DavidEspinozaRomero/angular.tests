@@ -19,43 +19,48 @@
         <div class="card">
   
           <div class="card-body">
-            <!--Header-->
+            <!-- #region Header-->
             <div class="form-header blue accent-1">
               <h3><i class="fas fa-envelope"></i> Write to us:</h3>
             </div>
-  
+            
             <p>We'll write rarely, but with only the best content.</p>
             <br>
-  
-            <!--Body-->
-            <div class="md-form">
-              <i class="fas fa-user prefix grey-text"></i>
-              <input type="text" id="form-name" class="form-control">
-              <label for="form-name">Your name</label>
-            </div>
-  
-            <div class="md-form">
-              <i class="fas fa-envelope prefix grey-text"></i>
-              <input type="text" id="form-email" class="form-control">
-              <label for="form-email">Your email</label>
-            </div>
-  
-            <div class="md-form">
-              <i class="fas fa-tag prefix grey-text"></i>
-              <input type="text" id="form-Subject" class="form-control">
-              <label for="form-Subject">Subject</label>
-            </div>
-  
-            <div class="md-form">
-              <i class="fas fa-pencil-alt prefix grey-text"></i>
-              <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
-              <label for="form-text">Icon Prefix</label>
-            </div>
-  
-            <div class="text-center mt-4">
-              <button class="btn btn-light-blue">Submit</button>
-            </div>
-  
+            <!-- #endregion Header-->
+            <form formGroupName="contactForm">
+              <!-- #region Body-->
+              <div class="md-form">
+                <i class="fas fa-user prefix grey-text"></i>
+                <label for="form-name fw-bold">Nombres:</label>
+                <input type="text" id="form-name" class="form-control">
+              </div>
+    
+              <div class="md-form">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <label for="form-email fw-bold">Correo:</label>
+                <input type="text" id="form-email" class="form-control">
+              </div>
+    
+              <div class="md-form">
+                <i class="fas fa-tag prefix grey-text"></i>
+                <label for="form-Subject">Asunto:</label>
+                <input type="text" id="form-Subject" class="form-control">
+              </div>
+    
+              <div class="md-form">
+                <i class="fas fa-pencil-alt prefix grey-text"></i>
+                <label for="form-text">Descripcion:</label>
+                <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
+              </div>
+    
+              <div class="text-center mt-4">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button class="btn btn-light-blue" >Submit</button>
+              </div>
+              <!-- #endregion Body-->
+
+            </form>
+
           </div>
   
         </div>

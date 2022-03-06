@@ -10,3 +10,6 @@ agregar foto de duena
 
 (Productos)
 crear un diseno
+
+(Contacto)
+conectar con base

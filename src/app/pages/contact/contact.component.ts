@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -7,13 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  title = 'My first AGM project';
-  lat = 51.678418;
-  lng = 7.809007;
+  // title = 'My first AGM project';
+  // lat = 51.678418;
+  // lng = 7.809007;
   
-  constructor() { }
+  contactForm:FormGroup = this.fb.FormGroup({
+    name: ['test', [Validators.required] ],
+  })
+
+  constructor(private fb:FormBuilder) { }
 
   ngOnInit(): void {
   }
+
 
 }
