@@ -11,11 +11,11 @@ export class ContactComponent implements OnInit {
   // title = 'My first AGM project';
   // lat = 51.678418;
   // lng = 7.809007;
-  regExp: RegExp
+  // regExp: RegExp
 
   contactForm:FormGroup = this.fb.group({
     name: ['', [Validators.required] ],
-    phone: ['', [Validators.required, Validators.maxLength(10)] ],
+    phone: ['', [Validators.required] ],
     email: ['', [Validators.required] ],
     subject: ['', [Validators.required] ],
     description: ['', [Validators.required] ],
