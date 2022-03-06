@@ -31,7 +31,7 @@ export class ContactComponent implements OnInit {
   // Trae la informacion del formulario
   // 06/03/2022
   // David E.
-  submit(event:any)
+  onSubmit(event:any)
   {
     console.log(event)
     console.log(this.contactForm.value)
