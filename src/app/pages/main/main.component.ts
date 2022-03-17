@@ -20,7 +20,7 @@ export class MainComponent implements OnInit {
       alt: "imagen test",
       title: "Bordados a maquina",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum libero totam blanditiis! Nobis inventore, incidunt quo rerum similique corrupti adipisci ea sequi. At dolores, mollitia omnis totam hic sequi temporibus!",
+        "El Bordado a máquina le da realce, belleza y originalidad a tu estilo, gracias a la gran trayectoria de nuestra diseñadora te brindamos estilos ùnicos en el mercado, este tipo de bordado se característica por la calidad de la tela  las puntadas precisas y correcta combinación de colores que hacen del diseño ùnico, limitado y especial con formas que destaquen tu personalidad. Al adquirir nuestros productos te proporcionamos una sensación especial pues realzan la belleza de tu hogar",
       routerLink: "/productos/bordadoamaquina",
     },
     {
