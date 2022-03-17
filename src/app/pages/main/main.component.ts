@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Card } from "../../interfaces/interfaces";
 
 @Component({
   selector: "app-main",
@@ -6,7 +7,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./main.component.scss"],
 })
 export class MainComponent implements OnInit {
-  list: any[] = [
+  list: Card[] = [
     {
       src: "https://unsplash.com/photos/AFR80W_pT8o/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Njl8fGVtYnJvaWRlcnl8ZW58MHx8fHwxNjQzNDY4NDc3&force=true&w=640",
       alt: "bordado punto de cruz de perro",
@@ -33,7 +34,7 @@ export class MainComponent implements OnInit {
     },
   ];
 
-  cardlrlist: any[] = [
+  cardlrlist: Card[] = [
     {
       imgPosition: "left",
       src: "https://unsplash.com/photos/5hvn-2WW6rY/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQzNTA5ODkz&force=true&w=640",
