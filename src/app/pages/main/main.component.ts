@@ -28,7 +28,7 @@ export class MainComponent implements OnInit {
       alt: "bordado a mano de gatito",
       title: "Bordados a Mano",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum libero totam blanditiis! Nobis inventore, incidunt quo rerum similique corrupti adipisci ea sequi. At dolores, mollitia omnis totam hic sequi temporibus!",
+        "La creatividad, perseverancia y entusiasmo se reflejan en los bordados a mano que te ofrece lilias bordados te invito a que conozcas nuestros productos y disfrutes de una infinidad de modelos  que te presentamos.",
       routerLink: "/productos/bordadoamano",
     },
   ];
