@@ -12,7 +12,7 @@ export class MainComponent implements OnInit {
       alt: "bordado punto de cruz de perro",
       title: "Bordado punto de cruz",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum libero totam blanditiis! Nobis inventore, incidunt quo rerum similique corrupti adipisci ea sequi. At dolores, mollitia omnis totam hic sequi temporibus!",
+        "El bordado en punto de cruz existe desde tiempos remotos, en Lilia 's Bordados consideramos que este tipo de bordado es un clásico que brinda un estilo personalizado ya que a partir de sus puntadas diagonales le da un toque de elegancia y distinción.  Para su creación se hace una selección ardua de los materiales que vamos a utilizar y de  esta manera aseguramos la durabilidad de la prenda. Con este tipo de bordado tienes en tus manos una pizca de historia cultural que tiene como enfoque realzar y estilizar la belleza de tu hogar.",
       routerLink: "productos/bordadopuntodecruz",
     },
     {
