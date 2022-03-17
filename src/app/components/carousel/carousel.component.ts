@@ -13,7 +13,7 @@ export class CarouselComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    image:string = this.images[0]?.url
+    this.image = this.images[0]?.url
   }
 
   getImg(item: any) {
