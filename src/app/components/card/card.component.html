@@ -1,7 +1,14 @@
 <div class="card border rounded shadow-sm mb-3">
-    <img [src]="src" class="card-img-top aspect-ratio-4 " [alt]="alt">
-    <div class="card-body">
-        <h2 class="card-title h4 fw-bold ff-t" role="button"   > {{title}} </h2>
-        <p class="card-text fs-5"> {{description}} </p>
-    </div>
+  <img [src]="src" class="card-img-top aspect-ratio-4" [alt]="alt" />
+  <div class="card-body">
+    <h2 class="card-title h4 fw-bold ff-t"
+		[ngClass]="{'h4': screen.width >= 768; 'h5': screen.width >= 768;}"
+		role="button">{{title}}</h2>
+    <p
+      class="card-text fs-5"
+      [ngClass]="{'fs-5': screen.width >= 768; 'fs-6': screen.width >= 768;}"
+    >
+      {{description}}
+    </p>
+  </div>
 </div>
