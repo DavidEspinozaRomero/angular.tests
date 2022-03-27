@@ -17,8 +17,6 @@ export class CardComponent implements OnInit {
   constructor(private functionsService:FunctionsService) { }
 
   ngOnInit(): void {
-  console.log(this.sw);
-  
   }
 
 }

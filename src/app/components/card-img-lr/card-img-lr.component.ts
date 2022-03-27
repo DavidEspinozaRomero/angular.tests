@@ -14,7 +14,8 @@ export class CardImgLrComponent implements OnInit {
   @Input() imgPosition?:string
   @Input() routerLink?:string
 
-  constructor() { }
+  sw = this.functionsService.sw
+  constructor(private functionsService:FunctionsService) { }
 
   ngOnInit(): void {
   }

@@ -1,20 +1,25 @@
-
-
-
-	<div class="card mb-5 border-0 shadow-sm" >
-		<div class="row g-0">
-			<div class="col-md-6" *ngIf="imgPosition == 'rigth' ">
-				<img [src]="src" class="img-fluid rounded-start aspect-ratio-16" [alt]="alt">
-			</div>
-			<div class="col-md-6">
-				<div class="card-body">
-					<h2 class="card-title h4 fw-bold ff-t" role="button"   > {{title}} </h2>
-					<p class="card-text fs-5"> {{description}} </p>
-					<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-				</div>
-			</div>
-			<div class="col-md-6" *ngIf="imgPosition == 'left' ">
-				<img [src]="src" class="img-fluid rounded-end aspect-ratio-16" [alt]="alt">
-			</div>
-		</div>
-	</div>
+<div class="card mb-5 border-0 shadow-sm">
+  <div class="row g-0">
+    <div class="col-md-6" *ngIf="imgPosition == 'rigth' ">
+      <img
+        [src]="src"
+        class="img-fluid rounded-start aspect-ratio-16"
+        [alt]="alt"
+      />
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h2 class="card-title fw-bold ff-t" [ngClass]="{'h4': sw >= 768, 'h5': sw < 768}" role="button">{{title}}</h2>
+        <p class="card-text " [ngClass]="{'fs-5': sw >= 768}">{{description}}</p>
+        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+      </div>
+    </div>
+    <div class="col-md-6" *ngIf="imgPosition == 'left' ">
+      <img
+        [src]="src"
+        class="img-fluid rounded-end aspect-ratio-16"
+        [alt]="alt"
+      />
+    </div>
+  </div>
+</div>
