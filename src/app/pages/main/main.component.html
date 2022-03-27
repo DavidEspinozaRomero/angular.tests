@@ -22,8 +22,8 @@
     </h2>
   </div>
   <section class="mb-5">
-    <div class="row row-col-md-3 justify-content-evenly">
-      <div class="col col-md-auto" *ngFor="let item of list">
+    <div class="row row-cols-1 row-col-md-3 justify-content-evenly">
+      <div class="col" *ngFor="let item of list">
         <app-card
           [src]="item.src"
           [alt]="item.alt"
@@ -33,7 +33,7 @@
       </div>
     </div>
   </section>
-  <section class="mb-4 px-4">
+  <section class="mb-4 ">
     <app-card-img-lr
       *ngFor="let item of cardlrlist"
       [src]="item.src"
