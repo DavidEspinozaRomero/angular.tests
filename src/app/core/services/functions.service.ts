@@ -5,9 +5,7 @@ import * as moment from 'moment';
   providedIn: 'root'
 })
 export class FunctionsService {
-
-  constructor() { }
-
+  sw:number = screen.width
   onlyNumbers(evt: any) {
     const theEvent = evt || window.event;
     // Handle key press
@@ -258,4 +256,6 @@ export class FunctionsService {
     }
     return cadena;
   }
+
+
 }

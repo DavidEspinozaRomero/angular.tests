@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { FunctionsService } from '../../core/services/functions.service';
 
 @Component({
   selector: 'app-card',
@@ -12,8 +13,8 @@ export class CardComponent implements OnInit {
   @Input() title?:string
   @Input() description?:string
   @Input() routerLink?:string
-
-  constructor() { }
+  sw = this.functionsService.sw
+  constructor(private functionsService:FunctionsService) { }
 
   ngOnInit(): void {
   }

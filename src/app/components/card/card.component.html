@@ -2,13 +2,13 @@
   <img [src]="src" class="card-img-top aspect-ratio-4" [alt]="alt" />
   <div class="card-body">
     <h2 class="card-title h4 fw-bold ff-t"
-		[ngClass]="{'h4': screen.width >= 768}"
+		[ngClass]="{'h4': sw >= 768}"
 		role="button">{{title}}</h2>
     <p
       class="card-text fs-5"
-      [ngClass]="{'fs-5': screen.width >= 768}"
+      [ngClass]="{'fs-5': sw >= 768}"
     >
-      {{description}} {{screen.width}}
+      {{description}}
     </p>
   </div>
 </div>
