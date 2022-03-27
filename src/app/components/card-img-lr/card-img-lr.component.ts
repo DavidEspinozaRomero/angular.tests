@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { FunctionsService } from '../../core/services/functions.service';
 
 @Component({
   selector: 'app-card-img-lr',
