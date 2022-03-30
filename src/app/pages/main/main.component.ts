@@ -13,7 +13,7 @@ export class MainComponent implements OnInit {
       alt: "bordado punto de cruz de perro",
       title: "Bordado punto de cruz",
       description:
-        "El bordado en punto de cruz existe desde tiempos remotos, en Lilia 's Bordados consideramos que este tipo de bordado es un clásico que brinda un estilo personalizado ya que a partir de sus puntadas diagonales le da un toque de elegancia y distinción.  Para su creación se hace una selección ardua de los materiales que vamos a utilizar y de  esta manera aseguramos la durabilidad de la prenda. Con este tipo de bordado tienes en tus manos una pizca de historia cultural que tiene como enfoque realzar y estilizar la belleza de tu hogar.",
+        "El bordado en punto de cruz es un clásico que brinda un estilo personalizado ya que a partir de sus puntadas diagonales le da un toque de elegancia y distinción al modelo. Con este tipo de bordado tienes en tus manos una pizca de historia cultural que tiene como enfoque realzar y estilizar la belleza de tu hogar.",
       routerLink: "productos/bordadopuntodecruz",
     },
     {
@@ -21,7 +21,7 @@ export class MainComponent implements OnInit {
       alt: "imagen test",
       title: "Bordados a maquina",
       description:
-        "El Bordado a máquina le da realce, belleza y originalidad a tu estilo, gracias a la gran trayectoria de nuestra diseñadora te brindamos estilos ùnicos en el mercado, este tipo de bordado se característica por la calidad de la tela  las puntadas precisas y correcta combinación de colores que hacen del diseño ùnico, limitado y especial con formas que destaquen tu personalidad. Al adquirir nuestros productos te proporcionamos una sensación especial pues realzan la belleza de tu hogar",
+        "El Bordado a màquina le da realce, belleza y originalidad a tu estilo, gracias a la gran trayectoria de nuestra diseñadora al adquirir nuestros productos te proporcionamos una sensación especial pues tenemos bordados cuya característica es la calidad de la tela  las puntadas precisas y correcta combinación de colores que  realzan la belleza de tu hogar.",
       routerLink: "/productos/bordadoamaquina",
     },
     {
@@ -41,7 +41,7 @@ export class MainComponent implements OnInit {
       alt: "foto de mujer puesta ropa con bordados",
       title: "Bordados a tu medida",
       description:
-        "Lilias Bordados es  un lugar que te transporta  a recordar momentos únicos e inolvidables. Al adquirir nuestros productos la elegancia y delicadeza forman parte de tu hogar, para su elaboración se requiere de habilidad y creatividad. Nuestra diseñadora cuenta con más de 15 años de experiencia, lo que garantiza  la tècnica y durabilidad en los diseños, cuya definición se realza por su calidad de puntadas y la belleza de sus colores que son elaborados a partir de términos, números, mediciones y con material que aporta un excelente brillo y suavidad a la prenda. Ven y forma parte del mundo del bordado.",
+        "Lilias Bordados te ofrece diseños de alta calidad. Al adquirir nuestros bordados la elegancia y delicadeza forman parte de tu hogar gracias a  la calidad de sus puntadas y la belleza de sus colores con una  técnica y durabilidad incomparables. Ven y forma parte del mundo del bordado.",
       routerLink: "atumedida",
     },
     {
@@ -50,7 +50,7 @@ export class MainComponent implements OnInit {
       alt: "foto del negocio",
       title: "Nosotros",
       description:
-        "Lilias Bordados te ofrece diseños de alta calidad, todos son elaborados a partir de la creatividad e ingenio de nuestra diseñadora que siempre busca la manera de resaltar  nuestros productos con materiales que ayuden a mantener la firmeza y belleza del modelo.",
+        "Lilias Bordados es un lugar que te transporta  a recordar momentos únicos todos nuestros diseños  son elaborados con materiales que ayuden a mantener la firmeza y belleza del modelo a partir de la creatividad e ingenio de nuestra diseñadora.",
       routerLink: "nosotros",
     },
   ];
