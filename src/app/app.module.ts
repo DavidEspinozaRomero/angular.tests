@@ -4,7 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import {HashLocationStrategy, Location, LocationStrategy} from '@angular/common';
 
 
-import { AppRoutingModule } from './app-routing.module';
+// import { AppRoutingModule } from './app.routing';
+import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 import { ComponentsModule } from './components/components.module';
 import { PagesRoutingModule } from './pages/pages-routing.module';
