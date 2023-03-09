@@ -1,13 +1,13 @@
 <div class="card border rounded shadow-sm mb-3">
   <img [src]="src" class="card-img-top aspect-ratio-4" [alt]="alt" />
   <div class="card-body">
+		<!-- [ngClass]="{'h4': sw >= 768, 'h5': sw < 768}" -->
     <h2 class="card-title h4 fw-bold ff-t"
-		[ngClass]="{'h4': sw >= 768, 'h5': sw < 768}"
 		role="button">{{title}}</h2>
     <p
       class="card-text fs-5"
-      [ngClass]="{'fs-5': sw >= 768}"
-    >
+      >
+      <!-- [ngClass]="{'fs-5': sw >= 768}" -->
       {{description}}
     </p>
   </div>

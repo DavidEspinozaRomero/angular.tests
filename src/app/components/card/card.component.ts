@@ -1,22 +1,27 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { FunctionsService } from '../../core/services/functions.service';
+import { CommonModule } from '@angular/common';
+import {
+  Component,
+  OnInit,
+  Input,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss']
+  styleUrls: ['./card.component.scss'],
+  standalone: true,
+  imports: [CommonModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CardComponent implements OnInit {
+  @Input() src?: string;
+  @Input() alt?: string;
+  @Input() title?: string;
+  @Input() description?: string;
+  @Input() routerLink?: string;
+  
+  constructor() {}
 
-  @Input() src?:string
-  @Input() alt?:string
-  @Input() title?:string
-  @Input() description?:string
-  @Input() routerLink?:string
-  sw = this.functionsService.sw
-  constructor(private functionsService:FunctionsService) { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

@@ -1,10 +1,14 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { FunctionsService } from '../../core/services/functions.service';
+import { CommonModule } from '@angular/common';
+import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-card-img-lr',
   templateUrl: './card-img-lr.component.html',
-  styleUrls: ['./card-img-lr.component.scss']
+  styleUrls: ['./card-img-lr.component.scss'],
+  standalone: true,
+  imports: [CommonModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+
 })
 export class CardImgLrComponent implements OnInit {
   
@@ -15,8 +19,7 @@ export class CardImgLrComponent implements OnInit {
   @Input() imgPosition?:string
   @Input() routerLink?:string
 
-  sw = this.functionsService.sw
-  constructor(private functionsService:FunctionsService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
