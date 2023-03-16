@@ -2,66 +2,67 @@
 // #region variables
 
 $color-primary: #b9157e;
-$font-primary: 'Poppins', sans-serif;
-$font-titles: 'Roboto Slab', serif;
+$font-primary: "Poppins", sans-serif;
+$font-titles: "Roboto Slab", serif;
 
 // #endregion variables
 
-
 body {
-    background-color: rgba($color-primary, .1);
-    font-family: $font-primary;
+  // background-color: rgba($color-primary, .1);
+  font-family: $font-primary;
+  // padding: 0;
+  // margin: 0;
 }
 
-// #region scrollbar 
+// #region scrollbar
 // mozilla
 * {
-    scrollbar-width: .5rem;
-    scrollbar-color: rgba($color-primary, .5) rgba($color-primary, .1);
+  scrollbar-width: 0.5rem;
+  scrollbar-color: rgba($color-primary, 0.5) rgba($color-primary, 0.1);
 }
 //   crome, edge, etc
 *::-webkit-scrollbar {
-    width: .5em;
+  width: 0.5em;
 }
 
 *::-webkit-scrollbar-track {
-box-shadow: inset 0 0 6px rgba($color-primary, .1);
+  box-shadow: inset 0 0 6px rgba($color-primary, 0.1);
 }
 
 *::-webkit-scrollbar-thumb {
-background-color: rgba($color-primary, .5);
-outline: 1px solid rgba($color-primary, .2);
+  background-color: rgba($color-primary, 0.5);
+  outline: 1px solid rgba($color-primary, 0.2);
 }
-// #endregion scrollbar 
+// #endregion scrollbar
 
 // #region clases
-.aspect-ratio-16{
-    aspect-ratio: 16/9;
-    object-fit: cover;
+.aspect-ratio-16 {
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }
 
-.aspect-ratio-4{
-    aspect-ratio: 4/3;
-    object-fit: cover;
+.aspect-ratio-4 {
+  aspect-ratio: 4/3;
+  object-fit: cover;
 }
 
-.aspect-ratio-9{
-    aspect-ratio: 9/16;
-    object-fit: cover;
+.aspect-ratio-9 {
+  aspect-ratio: 9/16;
+  object-fit: cover;
 }
 
-.aspect-ratio-3{
-    aspect-ratio: 3/4;
-    object-fit: cover;
+.aspect-ratio-3 {
+  aspect-ratio: 3/4;
+  object-fit: cover;
 }
 
-.aspect-ratio-1{
-    aspect-ratio: 1;
-    object-fit: cover;
+.aspect-ratio-1 {
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
 .ff-t {
-    font-family: $font-titles;
-    color: $color-primary;
+  font-family: $font-titles;
+  color: $color-primary;
 }
 // #endregion clases

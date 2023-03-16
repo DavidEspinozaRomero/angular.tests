@@ -1,0 +1,45 @@
+<div class="header-spacin"></div>
+<header class="fixed-top">
+  <nav
+    class="navbar navbar-expand-sm navbar-dark bg-dark"
+    aria-label="Fifth navbar example"
+  >
+    <div class="container-fluid">
+      <!-- <a routerLink="/" class="navbar-brand">
+        <i class="bi bi-pc-display fs-4 me-2" aria-label="logo Deerhou"></i>
+        Lilia's Bordados
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarHeader"
+        aria-controls="navbarHeader"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarHeader"
+      >
+        <ul class="nav col col-lg-auto text-small justify-content-end">
+          <li *ngFor="let item of menuItems">
+            <a
+              role="button"
+              [routerLink]="item.routerLink"
+              routerLinkActive="text-danger"
+              [routerLinkActiveOptions]="{ exact: true }"
+              class="nav-link text-secondary py-0 px-2"
+            >
+              <i class="text-center fs-4 d-block" [class]="item.icon"></i>
+              {{ item.label }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

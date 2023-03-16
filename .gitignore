@@ -48,3 +48,6 @@ Thumbs.db
 # locks
 yarn.lock
 package-lock.json
+
+# Mine
+notas.md

@@ -1,0 +1,17 @@
+
+$mobile: 600px;
+
+@mixin mobile {
+	@media (min-width: $mobile) {
+		@content;
+	}
+}
+
+
+.header-spacin {
+  height: 59px;
+
+  @include mobile {
+		height: 73px;
+	}
+}
