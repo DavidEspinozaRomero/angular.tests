@@ -29,9 +29,7 @@
           <li *ngFor="let item of menuItems">
             <a
               role="button"
-              [routerLink]="item.routerLink"
-              routerLinkActive="text-danger"
-              [routerLinkActiveOptions]="{ exact: true }"
+              [href]="item?.href"
               class="nav-link text-secondary py-0 px-2"
             >
               <i class="text-center fs-4 d-block" [class]="item.icon"></i>
