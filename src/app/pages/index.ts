@@ -8,3 +8,4 @@ export * from './products/bordadosamano/bordadosamano.component';
 export * from './products/bordadosamaquina/bordadosamaquina.component';
 export * from './products/bordadospuntodecruz/bordadospuntodecruz.component';
 export * from './products/products.component';
+export * from './services/services.component';

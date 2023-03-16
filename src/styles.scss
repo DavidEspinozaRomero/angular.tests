@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
 // #region variables
 
 $color-primary: #b9157e;
@@ -8,10 +9,7 @@ $font-titles: "Roboto Slab", serif;
 // #endregion variables
 
 body {
-  // background-color: rgba($color-primary, .1);
   font-family: $font-primary;
-  // padding: 0;
-  // margin: 0;
 }
 
 // #region scrollbar

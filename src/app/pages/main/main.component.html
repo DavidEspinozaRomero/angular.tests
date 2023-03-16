@@ -1,4 +1,4 @@
-<section class="mb-5">
+<section id="banner-principal" class="mb-5">
   <div class="card bg-dark text-white">
     <img
       src="https://unsplash.com/photos/Rdb--yAPMyI/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MjR8fGVtYnJvaWRlcnl8ZW58MHx8fHwxNjQzNDY3NTQ2&force=true&w=640"
@@ -8,31 +8,42 @@
     <div
       class="card-img-overlay d-flex align-items-center justify-content-center"
     >
-      <img src="../../../assets/img/logo.png" alt="logo lilias bordados" />
-      <h1 class="card-title ff-t" hidden>Lilia's Bordados</h1>
-      <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+      <div>
+        <img src="../../../assets/img/logo.png" alt="logo lilias bordados" />
+        <h1 class="card-title ff-t" hidden>Lilia's Bordados</h1>
+        <p class="card-text">Personalizados únicos y de alta calidad</p>
+      </div>
     </div>
   </div>
 </section>
 
 <div class="container">
-  <section id="banner-principal" class="text-center mb-5">
-    <h2 class="ff-t">
-      Todos nuestros productos son únicos, hechos a mano, a tu medida.
-    </h2>
-    <p>
-      La elegancia y estilo plasmado en tu hogar, Lilia's Bordados te acompaña a
-      entrar en el fascinante mundo del bordado donde encuentras desde adornos
-      hasta decoraciones con características que te trasladan a un estilo
-      clásico.
-    </p>
+  <section id="products" class="my-5 pt-5">
+    <div class="text-center">
+      <h2 class="ff-t">
+        Todos nuestros productos son únicos, hechos a mano, a tu medida.
+      </h2>
+      <p>
+        La elegancia y estilo plasmado en tu hogar, Lilia's Bordados te acompaña
+        a entrar en el fascinante mundo del bordado donde encuentras desde
+        adornos hasta decoraciones con características que te trasladan a un
+        estilo clásico.
+      </p>
+    </div>
+    <app-products></app-products>
   </section>
-
-  <section id="products"></section>
-  <section id="services"></section>
-  <section id="about-me"></section>
-  <section id="gallery"></section>
-  <section id="contact"></section>
+  <section id="services" class="my-5 pt-5">
+    <app-services></app-services>
+  </section>
+  <section id="gallery" class="my-5 pt-5">
+    <app-gallery></app-gallery>
+  </section>
+  <section id="about-me" class="my-5 pt-5">
+    <app-nosotros></app-nosotros>
+  </section>
+  <section id="contact" class="mt-5 pt-5">
+    <app-contact></app-contact>
+  </section>
   <!-- <section class="mb-5">
     <div class="row row-cols-1 row-cols-md-3 justify-content-evenly">
       <div class="col" *ngFor="let item of list">

@@ -18,11 +18,6 @@ export class HeaderComponent {
       href: '#',
     },
     {
-      label: 'Contacto',
-      icon: 'bi bi-chat-fill',
-      href: '#contact',
-    },
-    {
       label: 'Productos',
       icon: 'bi bi-folder-fill',
       href: '#products',
@@ -34,16 +29,21 @@ export class HeaderComponent {
       href: '#services',
     },
     {
+      label: 'Galleria',
+      icon: 'bi bi-person-fill-gear',
+      routerLink: '',
+      href: '#gallery',
+    },
+    {
       label: 'Empresa',
       icon: 'bi bi-person-fill-gear',
       routerLink: '',
       href: '#about-me',
     },
     {
-      label: 'Galleria',
-      icon: 'bi bi-person-fill-gear',
-      routerLink: '',
-      href: '#gallery',
+      label: 'Contacto',
+      icon: 'bi bi-chat-fill',
+      href: '#contact',
     },
     // {
     //   label: 'Services',
@@ -51,7 +51,6 @@ export class HeaderComponent {
     //   routerLink: '',
     //   href: '#',
     // },
-    // { label: 'About me', icon: 'bi bi-person-fill', routerLink: '' },
   ];
   //#endregion Variables
 }

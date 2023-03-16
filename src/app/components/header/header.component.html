@@ -5,8 +5,8 @@
     aria-label="Fifth navbar example"
   >
     <div class="container-fluid">
-      <!-- <a routerLink="/" class="navbar-brand">
-        <i class="bi bi-pc-display fs-4 me-2" aria-label="logo Deerhou"></i>
+      <a routerLink="/" class="navbar-brand">
+        <!-- <i class="bi bi-pc-display fs-4 me-2" aria-label="logo Deerhou"></i> -->
         Lilia's Bordados
       </a>
       <button
@@ -19,7 +19,7 @@
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
-      </button> -->
+      </button>
 
       <div
         class="collapse navbar-collapse justify-content-end"
@@ -32,8 +32,8 @@
               [href]="item?.href"
               class="nav-link text-secondary py-0 px-2"
             >
-              <i class="text-center fs-4 d-block" [class]="item.icon"></i>
-              {{ item.label }}
+              <i class="text-center d-block" [class]="item.icon"></i>
+              <small>{{ item.label }}</small>
             </a>
           </li>
         </ul>

@@ -1,17 +1,31 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { CardComponent, CardImgLrComponent } from 'src/app/components';
+// import { CardComponent, CardImgLrComponent } from 'src/app/components';
 import { Card } from '../../interfaces/interfaces';
+
+import { ContactComponent } from '../contact/contact.component';
+import { GalleryComponent } from '../gallery/gallery.component';
+import { NosotrosComponent } from '../nosotros/nosotros.component';
+import { ProductsComponent } from '../products/products.component';
+import { ServicesComponent } from '../services/services.component';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [CommonModule, CardComponent, CardImgLrComponent],
+  imports: [
+    CommonModule,
+    ProductsComponent,
+    ServicesComponent,
+    GalleryComponent,
+    ContactComponent,
+    NosotrosComponent
+  ],
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MainComponent implements OnInit {
+  //#region variables
   list: Card[] = [
     {
       src: 'https://unsplash.com/photos/AFR80W_pT8o/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Njl8fGVtYnJvaWRlcnl8ZW58MHx8fHwxNjQzNDY4NDc3&force=true&w=640',
@@ -59,6 +73,7 @@ export class MainComponent implements OnInit {
       routerLink: 'nosotros',
     },
   ];
+  //#endregion variables
   constructor() {}
 
   ngOnInit(): void {}
