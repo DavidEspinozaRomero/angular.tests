@@ -1,11 +1,37 @@
 
-<div>
-	<img class="card-img aspect-ratio-16" [src]="image || '' " alt="imagen pricipal">
-	<div class="row flex-nowrap mt-3 overflow-auto pb-3">
-		<div *ngFor="let item of images" 
-		class="col-2">
-			<img class="card-img aspect-ratio-4" [src]="item?.url" alt="item?.alt"
-			(mouseover)="getImg(item)">
-		</div>
-	</div>
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <app-carousel-indicator [items]="carouselList" ></app-carousel-indicator>
+  </div>
+  <div class="carousel-inner text-center">
+    <app-carousel-item [items]="carouselList"></app-carousel-item>
+    <!-- <div class="carousel-item">
+      <img class="bd-placeholder-img" width="100%" height="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14sw-kisFHt7SH4C0yRpvH_gZYOSdhpJFSAIlH631&s" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Another example headline.</h1>
+          <p>Some representative placeholder content for the second slide of the carousel.</p>
+          <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="bd-placeholder-img" width="100%" height="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14sw-kisFHt7SH4C0yRpvH_gZYOSdhpJFSAIlH631&s" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" />
+      <div class="container">
+        <div class="carousel-caption text-end">
+          <h1>One more for good measure.</h1>
+          <p>Some representative placeholder content for the third slide of this carousel.</p>
+          <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>

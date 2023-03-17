@@ -1,0 +1,9 @@
+<button
+  *ngFor="let item of items; index as i_slide"
+  type="button"
+  data-bs-target="#myCarousel"
+  [class]="i_slide === 0 ? 'active' : ''"
+  [attr.data-bs-slide-to]="i_slide"
+  [attr.aria-current]="i_slide === 0"
+  [attr.aria-label]="'Slide' + (i_slide + 1)"
+></button>

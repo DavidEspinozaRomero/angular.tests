@@ -1,0 +1,22 @@
+<div *ngFor="let item of items; index as i_item" class="carousel-item" [class]="i_item === 0 ? 'active' : ''" >
+  <img
+    class="bd-placeholder-img"
+    width="80%"
+    height="80%"
+    [src]="item.imgSrc"
+    aria-hidden="true"
+    preserveAspectRatio="xMidYMid slice"
+    focusable="false"
+    alt="photo de bordado"
+    loading="lazy"
+  />
+  <div class="container">
+    <div class="carousel-caption text-start">
+      <h1> {{item.title + i_item}} </h1>
+      <p>
+        {{item.description + i_item}}
+      </p>
+      <!-- <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p> -->
+    </div>
+  </div>
+</div>
