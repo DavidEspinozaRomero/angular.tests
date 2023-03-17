@@ -15,57 +15,57 @@ export class CarouselComponent implements OnInit {
   carouselList = [
     {
       imgSrc:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14sw-kisFHt7SH4C0yRpvH_gZYOSdhpJFSAIlH631&s',
-      title: 'Example headline.',
+        './../../../assets/img/bordado1.jpeg',
+      title: 'Bailarinas',
       description:
         'Some representative placeholder content for the first slide of the carousel.',
     },
     {
       imgSrc:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14sw-kisFHt7SH4C0yRpvH_gZYOSdhpJFSAIlH631&s',
-      title: 'Example headline.',
+        './../../../assets/img/bordado2.jpeg',
+      title: 'Lobito',
       description:
         'Some representative placeholder content for the first slide of the carousel.',
     },
     {
       imgSrc:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14sw-kisFHt7SH4C0yRpvH_gZYOSdhpJFSAIlH631&s',
-      title: 'Example headline.',
+        './../../../assets/img/bordado3.jpeg',
+      title: 'Flores azules',
       description:
         'Some representative placeholder content for the first slide of the carousel.',
     },
     {
       imgSrc:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14sw-kisFHt7SH4C0yRpvH_gZYOSdhpJFSAIlH631&s',
-      title: 'Example headline.',
+        './../../../assets/img/bordado4.jpeg',
+      title: 'Tigre',
       description:
         'Some representative placeholder content for the first slide of the carousel.',
     },
     {
       imgSrc:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14sw-kisFHt7SH4C0yRpvH_gZYOSdhpJFSAIlH631&s',
-      title: 'Example headline.',
+        './../../../assets/img/bordado5.jpeg',
+      title: 'Gatito negro',
       description:
         'Some representative placeholder content for the first slide of the carousel.',
     },
     {
       imgSrc:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14sw-kisFHt7SH4C0yRpvH_gZYOSdhpJFSAIlH631&s',
-      title: 'Example headline.',
+        './../../../assets/img/bordado6.jpeg',
+      title: 'Gatito blanco',
       description:
         'Some representative placeholder content for the first slide of the carousel.',
     },
     {
       imgSrc:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14sw-kisFHt7SH4C0yRpvH_gZYOSdhpJFSAIlH631&s',
-      title: 'Example headline.',
+        './../../../assets/img/bordado7.jpeg',
+      title: 'Orquideas',
       description:
         'Some representative placeholder content for the first slide of the carousel.',
     },
     {
       imgSrc:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14sw-kisFHt7SH4C0yRpvH_gZYOSdhpJFSAIlH631&s',
-      title: 'Example headline.',
+        './../../../assets/img/bordado8.jpeg',
+      title: 'Trio de gatitos bebes',
       description:
         'Some representative placeholder content for the first slide of the carousel.',
     },
