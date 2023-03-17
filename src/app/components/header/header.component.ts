@@ -19,24 +19,24 @@ export class HeaderComponent {
     },
     {
       label: 'Productos',
-      icon: 'bi bi-folder-fill',
+      icon: 'bi bi-bag-heart',
       href: '#products',
     },
     {
       label: 'Servicios',
-      icon: 'bi bi-person-fill-gear',
+      icon: 'bi bi-person-up',
       routerLink: '',
       href: '#services',
     },
     {
       label: 'Galleria',
-      icon: 'bi bi-person-fill-gear',
+      icon: 'bi bi-images',
       routerLink: '',
       href: '#gallery',
     },
     {
       label: 'Empresa',
-      icon: 'bi bi-person-fill-gear',
+      icon: 'bi bi-house-heart',
       routerLink: '',
       href: '#about-me',
     },
