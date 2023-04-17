@@ -1,0 +1,14 @@
+<carousel
+  [isAnimated]="true"
+  [noPause]="false"
+  [pauseOnFocus]="true"
+  class="text-center"
+>
+  <slide *ngFor="let slide of carouselList; index as i_slide">
+    <img [src]="slide.imgSrc" [alt]="'slide' + i_slide" class="img-ratio" />
+    <div class="carousel-caption d-none d-md-block">
+      <h3>{{ slide.title }}</h3>
+      <!-- <p>{{ slide.description }}</p> -->
+    </div>
+  </slide>
+</carousel>

@@ -5,15 +5,17 @@ import {
   Location,
   LocationStrategy,
 } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './pages';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, LayoutComponent, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule, LayoutComponent, BrowserAnimationsModule, CarouselModule.forRoot()],
   providers: [
     Location,
     { provide: LocationStrategy, useClass: HashLocationStrategy },
