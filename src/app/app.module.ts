@@ -9,10 +9,11 @@ import {
 import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './pages';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, LayoutComponent],
+  imports: [BrowserModule, AppRoutingModule, LayoutComponent, BrowserAnimationsModule],
   providers: [
     Location,
     { provide: LocationStrategy, useClass: HashLocationStrategy },
