@@ -1,10 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {
-  HashLocationStrategy,
-  Location,
-  LocationStrategy,
-} from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
@@ -15,11 +10,14 @@ import { LayoutComponent } from './pages';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, LayoutComponent, BrowserAnimationsModule, CarouselModule.forRoot()],
-  providers: [
-    Location,
-    { provide: LocationStrategy, useClass: HashLocationStrategy },
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    LayoutComponent,
+    BrowserAnimationsModule,
+    CarouselModule.forRoot(),
   ],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
