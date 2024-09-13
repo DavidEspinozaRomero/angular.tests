@@ -8,8 +8,8 @@ describe('BordadospuntodecruzComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BordadospuntodecruzComponent ]
-    })
+    imports: [BordadospuntodecruzComponent]
+})
     .compileComponents();
   });
 

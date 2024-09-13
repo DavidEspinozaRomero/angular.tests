@@ -8,8 +8,8 @@ describe('BordadosamaquinaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BordadosamaquinaComponent ]
-    })
+    imports: [BordadosamaquinaComponent]
+})
     .compileComponents();
   });
 
