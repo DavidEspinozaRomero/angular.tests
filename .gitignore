@@ -48,6 +48,7 @@ Thumbs.db
 # locks
 yarn.lock
 package-lock.json
+pnpm-lock.yaml
 
 # Mine
 notas.md
