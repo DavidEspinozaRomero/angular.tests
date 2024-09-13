@@ -1,6 +1,9 @@
 import { enableProdMode, importProvidersFrom } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
+import {
+  BrowserModule,
+  bootstrapApplication,
+  provideClientHydration,
+} from '@angular/platform-browser';
 import { provideAnimations } from '@angular/platform-browser/animations';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
@@ -20,6 +23,7 @@ bootstrapApplication(AppComponent, {
       AppRoutingModule,
       CarouselModule.forRoot()
     ),
+    provideClientHydration(),
     provideAnimations(),
   ],
 }).catch((err) => console.error(err));
